@@ -43,6 +43,7 @@ body {
 }
 
 #main-logo {
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -80,6 +81,7 @@ body {
 }
 
 #bar-buttons {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,4 +101,19 @@ body {
 #bar-buttons button:hover {
     border-color: #dadce0;
     filter: drop-shadow(1px 1px 0.1rem lightgray);
+}
+
+#special-link {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#special-link a{
+    text-decoration: none;
+}
+
+#special-link a:hover {
+    text-decoration: underline;
 }
