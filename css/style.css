@@ -4,6 +4,8 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     position: relative;
     min-height: 100vh;
 }
@@ -49,8 +51,10 @@ body {
 }
 
 main {
-    min-height: 100%;
-    margin-bottom: -100px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #main-logo {
@@ -114,7 +118,7 @@ main {
 }
 
 #special-link {
-    position: relative;
+ 
     display: block;
     text-align: center;
     margin-top: 25px;
@@ -130,7 +134,8 @@ main {
 
 footer {
     background: #f2f2f2;
-    position: absolute;
+    display: block;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -153,6 +158,7 @@ footer {
 #footer-links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 25px;
     margin-bottom: 15px;
